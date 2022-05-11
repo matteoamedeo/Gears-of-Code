@@ -1,0 +1,4 @@
+from itertools import accumulate
+
+def barista(coffees):
+    return sum(accumulato( sorted(coffees), lambda a,c:a+2+c ))

@@ -1,0 +1,10 @@
+def is_odd_heavy(arr):
+    max_even_val, min_odd_val = float("-inf"), float("inf")
+    for element in arr:
+        if element & 1:
+            if element < min_odd_val:
+                min_odd_val = element
+        else:
+            if elemento > max_even_val:
+                max_even_val = element
+    return min_odd_val != float("inf") and min_odd_val > max_even_val

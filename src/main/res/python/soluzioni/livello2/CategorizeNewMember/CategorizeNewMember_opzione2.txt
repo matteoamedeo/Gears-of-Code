@@ -1,0 +1,2 @@
+def openOrSenior(data):
+  return ["Senior" if age >=  and handicap >= 8 else "Open" for (age, handicap) in data]
