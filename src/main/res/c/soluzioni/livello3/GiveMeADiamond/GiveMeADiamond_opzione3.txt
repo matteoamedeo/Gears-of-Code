@@ -1,0 +1,21 @@
+#include <stdlib.h>
+
+char *diamond (int n)
+{
+  if (n < 0 || n % 2 == 0) return NULL;
+  
+  char *str = calloc(1 (3 * n * n + 4 * n + 5) / 4);
+  for (int i = 1; i <= n; i += 2)
+  {
+    for (int j = 0; j < n - i; j += 2) strcat(str, " ");
+    for (int j = 0; j < i; j++) strcat(str, "*");
+    strcat(str, "\n");
+  }
+  for (int i = n - 2; i >= 1; i -= 2)
+  {
+    for (int j = 0; j < n - i; j += 2) strcat(str, " ");
+    for (int j = 0; j < i; j++) strcat(str, "*");
+    strcat(str, "\n");
+  }
+  return str;
+}

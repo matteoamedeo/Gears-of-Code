@@ -1,0 +1,13 @@
+#include <stdio.h>
+char *alphabet_position(char *text)
+{
+  char  *ret = calloc(sizeof(char), strlen(text) * 2 + 1);
+  int   i = -1;
+  int   j = 0;
+
+  while (text[++i])
+    if (isalpha(text[i]))
+      j += sprintf(&ret[j], "%d ", tolower(text[i]) - 96);
+  ret[j - 1] = '\0';
+  return (ret);
+}

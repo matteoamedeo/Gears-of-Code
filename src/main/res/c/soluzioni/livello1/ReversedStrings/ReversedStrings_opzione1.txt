@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+
+char *strrev (char *string)
+{
+  int i;
+  char *str = string;
+  for(i = 0; i < (int)strlen(str)/2; i++){
+    char c = str[i];
+    str[i] = str[strlen(str) - i - 1];
+    str[strlen(str) - i - 1] = c;
+  }
+  return str; // reverse the string in place and return it
+}

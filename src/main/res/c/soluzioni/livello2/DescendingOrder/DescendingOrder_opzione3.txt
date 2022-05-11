@@ -1,0 +1,25 @@
+#include <inttypes.h>
+#include <string.h>
+
+uint64_t descendingOrder(uint64_t n)
+{
+  int digits[10];
+  uint64_t result = 0;
+  
+  memset(digits, 0, sizeof(digits));
+  
+  while(n > 0) {
+    digits[n%10]+;
+    n /= 10;
+  }
+  
+  for(int i = 9; i >= 0; i--) {
+    while(digits[i] > 0) {
+      result *= 10;
+      result += i;
+      digits[i]--;
+    }
+  }
+  
+  return result;
+}

@@ -1,0 +1,8 @@
+#include <stdlib.h>
+#include <string.h>
+
+char *no_space(const char *str) {
+  char* const ret = calloc(strlen(str)+1, sizeof(char));
+  for (char* out = ret; *str!=0; str++) if (*str != ' ') *out++ = *str;
+  return ret;
+}

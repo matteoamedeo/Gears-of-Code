@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <limits.h>
+
+void high_and_low (const char *strnum, char *result)
+{
+  int min = INT_MAX, max = INT_MIN;
+  while (*strnum) {
+    int n, x;
+    sscanf(strnum, "%d %n", &x, &n);
+    strnum += n;
+    if (x < min) min = x;
+    if (x > max) max = x;
+  }
+  sprintf(result, "%d %d", max, min);
+}

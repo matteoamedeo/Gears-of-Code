@@ -1,0 +1,14 @@
+size_t *find_capitals (const char *word, size_t *nb_uppercase)
+{
+
+    size_t size = strlen(word);
+    size_t *var = malloc(size * sizeof(size_t));
+    *nb_uppercase = 0;
+    
+    for (size_t i = 0; i < size; i++){
+        if (word[i] == toupper(word[i]) && isalpha(word[i])){
+            var[(*nb_uppercase)+] = i;      
+        }
+    }
+    return var;
+}

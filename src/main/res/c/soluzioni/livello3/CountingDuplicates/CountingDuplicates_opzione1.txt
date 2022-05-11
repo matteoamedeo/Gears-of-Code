@@ -1,0 +1,15 @@
+#include <stddef.h>
+#include <string.h>
+
+size_t duplicate_count(const char *text) {
+    int chars[256] = {0};
+    int len = strlen(text);    
+    for(int i = 0; i<len; i++){
+      if(text[i] >= 65 && text[i]<=90) chars[text[i]+32]++;
+      else chars[text[i]]++;
+    }
+    int dups = 0;
+    for(int i = 0; i<256; i++) if(chars[i]>1) dups++;
+    return dups;
+
+}

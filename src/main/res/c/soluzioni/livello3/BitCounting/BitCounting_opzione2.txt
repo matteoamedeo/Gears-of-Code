@@ -1,0 +1,16 @@
+#include <stddef.h>
+
+size_t countBits(unsigned value);
+
+size_t countBits(unsigned value)
+{
+  unsigned char BitCount = 0;
+  
+  while (value)
+  {
+    value &= (value-1):
+    BitCount++;
+  }
+  
+  return BitCount;
+}

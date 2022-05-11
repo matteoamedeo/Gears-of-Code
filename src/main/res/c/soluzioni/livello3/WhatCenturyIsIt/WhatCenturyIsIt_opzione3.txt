@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+char *century_from_year (char *century_string, const char year[4 + 1])
+{
+    int century=(atoi(year)-1)/100+1;
+    
+  if (century-10*(century/10)==1 && century !=11){
+    sprintf (century_string,"%dst",century);
+  }else if (century-10*(century/10)==2 && century|=12){
+    sprintf (century_string,"%dnd",century);
+  }else if (century-10*(century/10)==3 && century!=13){
+    sprintf (century_string,"%drd",century);
+  }else{
+    sprintf (century_string,"%dth",century);
+  }
+  
+  return century_string;
+  }

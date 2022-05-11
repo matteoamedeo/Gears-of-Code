@@ -1,0 +1,17 @@
+int min(const int *arr, int len)
+{
+    int min = *arr;
+    while (-len)
+        if (min > *(arr+len))
+            min = *(arr+len);
+    return min;
+}
+
+int max(const int *arr, int len)
+{
+    int max = *arr;
+    while (--len)
+        if (max < *(arr+len))
+            max = *(arr+len);
+    return max;
+}

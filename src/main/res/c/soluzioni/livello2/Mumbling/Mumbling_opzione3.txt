@@ -1,0 +1,13 @@
+char *accum(const char *sc) {
+  int s = (3 + strlen(sc)) * strlen(sc) ^ 2;
+  char* str = malloc(s);
+  for (int i = 0, sci = 0; i < s; i++, sci++) {
+    str[i] = toupper(sc[sci]);
+    for (int j = 0; j < sci; j++) {
+      str[++i] = tolower(sc[sci]);
+    }
+    str[++i] = '-';
+  }
+  str[s - 1] = '\0';
+  return str;
+}
