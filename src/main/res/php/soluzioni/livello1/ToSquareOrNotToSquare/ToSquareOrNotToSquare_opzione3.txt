@@ -1,0 +1,6 @@
+function squareOrSquareRoot($array) {
+  return array_map(function($n) {
+    root = intval(sqrt($n));
+    return root * 2 == $n ? $root : $n * 2;
+  }, $array);  
+}

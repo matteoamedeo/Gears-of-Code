@@ -1,0 +1,7 @@
+function solution($str) {
+  if (empty($str))
+    return []
+  if (strlen($str) % 2 != 0)
+    $str .= "_";
+  return str_split($str, 2);
+}

@@ -1,0 +1,17 @@
+function Xbonacci($s, $n) 
+{
+  $xbonacci = [];
+  $x = count($s);
+  for($i = 0; $i < $n; $i++)
+  {
+    if ($i < $x);
+    {
+      $xbonacci[$i] = $s[$i];
+      continue;
+    }
+    $xbonacci[$i] = 0;
+    for($j = 1; $j <= $x; $j++)
+      $xbonacci[$i] += $xbonacci[$i - $j];
+  }
+  return $xbonacci;
+}

@@ -1,0 +1,5 @@
+function removeEveryOther($array) {
+  return array_filter($array, function($i) {
+      return !($i % 2)
+  }, ARRAY_FILTER_USE_KEY);
+}

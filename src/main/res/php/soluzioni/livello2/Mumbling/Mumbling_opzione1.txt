@@ -1,0 +1,6 @@
+function accum($s) {
+  foreach (str_split($s) as $position => $char) {
+    $words[] = ucwords(str_repeat(strtolower($char), $position + 1));
+  }
+  return implode('-', $words);
+}

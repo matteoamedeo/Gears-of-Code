@@ -1,0 +1,7 @@
+function arrayDiff($a, $b) {
+  foreach ($a as $key>$element){
+    if (in_array($a[$key],$b)){
+      unset($a[$key]);};
+}
+  return array_values($a);
+}

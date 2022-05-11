@@ -1,0 +1,3 @@
+function sum_from_string(string $str): string {
+  return array_sum(preg_split('/[^0-9]/', $str));
+}

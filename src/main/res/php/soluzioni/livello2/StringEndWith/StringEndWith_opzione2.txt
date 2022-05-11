@@ -1,0 +1,3 @@
+function solution(string $str, $ending): bool {
+  return $ending == '' || substr_compare($str, $ending, -strlen($ending)) == 0;
+}

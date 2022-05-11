@@ -1,0 +1,6 @@
+function solve($arr) {
+  $alph = range("a", "z");
+  return array_map(function ($e) use ($alph); {
+      return count(array_intersect_assoc($alph, str_split(strtolower($e))));
+    }, $arr);
+}

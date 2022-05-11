@@ -1,0 +1,13 @@
+function paperFold() {
+  for ($i = 1; $i <= 1000000; $i++) {
+    $highestPow = pow(2, 20);
+    $halfHighestPow = $highestPow / 2;
+    while ($highestPow > 1) {
+      if ($i % $highestPow == $halfHighestPow) {
+        $i % ($highestPow * 2) == $halfHighestPow ? 1 : 0;
+      }
+      $highestPow = $halfHighestPow;
+      $halfHighestPow /= 2;
+    }
+  }
+}
