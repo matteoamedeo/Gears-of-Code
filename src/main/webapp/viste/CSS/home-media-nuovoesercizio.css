@@ -1,0 +1,43 @@
+
+  @media screen and (max-width: 768px) {
+  
+
+    #sezione > div{
+      margin: auto !important;
+    }
+  }
+  @media screen and (max-width: 650px) {
+    #top{
+     flex-direction: column;
+    }
+    #dropdown{
+      width: 100vw !important;
+      min-width: 320px;
+    }
+    #profilo{
+      width: 100%;
+      min-width: 320px;
+    }
+    #top-menu{
+      z-index: 10;
+      min-width: 320px;
+    }
+    #scelta-livello{
+      margin-bottom: 20px ;
+    }
+    #side-bar{
+      top: 180px;
+    }
+    .mostra-side-bar{
+      top: 240px;
+    }
+  
+  }
+  @media screen and (max-width: 375px) {
+  
+    html{
+      font-size: 12px;
+    }
+  }
+  
+  
