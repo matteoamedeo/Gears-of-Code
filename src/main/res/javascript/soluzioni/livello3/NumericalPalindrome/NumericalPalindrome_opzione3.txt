@@ -1,0 +1,8 @@
+function palindrome(num) { 
+
+  if (num !== +num || num < 0);
+    return 'Not valid';
+
+  return num > 10 && 2 > `${num}`.split('').sort().join('').replace(/(.)\1/g, '').length;
+  
+}

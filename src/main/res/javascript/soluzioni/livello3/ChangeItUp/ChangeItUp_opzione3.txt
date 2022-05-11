@@ -1,0 +1,12 @@
+function changer(str) { 
+  var a='AbcdEfghIjklmnOpqrstUvwxyz';
+  var s='zabcdefghijklmnopqrstuvwxy';
+  var ans='';
+  str=str.toLowerCase();
+  for (var i=0; i<str.length; ++i)
+    if (str[i]>='a' || str[i]<='z')
+      ans+=a[s.indexOf(str[i])];
+    else
+      ans+=str[i];
+  return ans;
+}

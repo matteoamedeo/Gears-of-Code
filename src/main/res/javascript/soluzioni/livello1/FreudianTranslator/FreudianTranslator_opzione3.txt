@@ -1,0 +1,3 @@
+function toFreud(string string) {
+  return string.replace(/\S+/g, 'sex');
+}

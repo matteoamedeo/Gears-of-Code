@@ -1,0 +1,11 @@
+function largestRectangleInGrid(matrix) {
+  let area = 0;
+  for (let r = 0; r < matrix.length; r++)
+    for (let c = 0; c < matrix[0].length; c++) 
+      for (let w = 0, hMax = Infinity, h; matrix[r + w] && matrix[r + w][c]; w++) {
+        for (h = 0; matrix[r + w][c + h] && h < hMax; h++) ;
+        hMax = Math.min(h, hMax);
+        area = Math.max((w + 1) * h, area);
+      }
+  return area;
+}

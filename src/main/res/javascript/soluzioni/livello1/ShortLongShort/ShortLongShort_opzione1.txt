@@ -1,0 +1,10 @@
+function solution(a, b){
+  const arr = []
+  if (a + b > 0){
+  if (a > b) arr.push(b), arr.push(a), arr.push(b)
+  if (b > a) arr.push(a), arr.push(b), arr.push(a)
+} else if (a.length > b.length) arr.push(b), arr.push(a), arr.push(b)
+  else if (b.length > a.length) arr.push(a), arr.push(b), arr.push(a)
+    return arr.join("")
+}
+  

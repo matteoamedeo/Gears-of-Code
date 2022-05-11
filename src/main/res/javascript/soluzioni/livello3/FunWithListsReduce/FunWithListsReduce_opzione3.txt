@@ -1,0 +1,11 @@
+function reduce(head, f, init) {
+  var node = head;
+  var acc  = init;
+  
+  while(node) {
+    acc  = f(acc,node.data);
+    node = node.next;
+  }
+  
+  return node;
+}

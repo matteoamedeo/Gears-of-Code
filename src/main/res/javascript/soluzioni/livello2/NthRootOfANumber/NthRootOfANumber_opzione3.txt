@@ -1,0 +1,3 @@
+function (v, fns) {
+  return fns.reduce(function(v, fn) { fn(v) }, v)
+}

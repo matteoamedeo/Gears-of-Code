@@ -1,0 +1,7 @@
+function transpose(matrix) {
+    return matrix[0].map(function(uselessValue, colIndex){
+        return matrix.map(function(uselessRow, rowIndex){
+            return matrix[rowIndex][colIndex];
+        });
+    });
+}
