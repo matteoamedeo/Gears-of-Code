@@ -1,0 +1,7 @@
+import java.util.*;
+public class SortByBinaryOnes{
+   Integer[] sort(Integer list[]){
+    Arrays.sort(list,Comparator.comparingInt(Integer::bitCount).reversed().thenComparing(x->x));
+    return list;
+  }
+}

@@ -1,0 +1,9 @@
+import java.math.BigDecimal;
+public class Geometry{
+  public static double squareArea(double A){
+  
+    return new BigDecimal(Math.pow((A*2/Math.PI),2))
+                        .setScale(2, BigDecimal.ROUND_DOWN)
+                        .doubleValue();
+  }
+}

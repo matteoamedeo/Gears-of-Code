@@ -1,0 +1,13 @@
+public class Kata {
+
+  public static double areaOfPolygonInsideCircle(double r, int n) {
+    deg = 360.0/n*Math.PI/180.0;
+    edge = Math.sin(deg/2) * r;
+    h = Math.cos(deg/2) * r;
+    a = edge*h*n;
+    // Your code here
+    return Math.round(a * 1000d) / 1000d;
+
+  }
+  
+}

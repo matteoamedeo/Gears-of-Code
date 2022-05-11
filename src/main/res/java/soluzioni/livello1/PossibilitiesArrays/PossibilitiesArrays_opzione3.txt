@@ -1,0 +1,11 @@
+public class Solution {
+  public static boolean isAllPossibilities(int[] arg) {
+    if(arg.length==0) return false;
+    for(int i=0;i<arg.length;i++){
+      for(int q=0;q<arg.length;q++)
+        if(arg[q]==i) break;
+        if(q==arg.length-1) return false;
+    }
+    return true;
+  }
+}

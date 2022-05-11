@@ -1,0 +1,12 @@
+public class PiApprox {
+  
+  public static String iterPi2String(Double epsilon) {
+     int i = 0, j = 1;
+     double pi = 0.0;
+     while( Math.abs(Math.PI - pi*4) > epsilon) {
+       if(i % 2 == 0) pi += 1.0/j;
+       else pi -= 1.0/j;
+       j += 2;
+	String.format("[%d, %.10f]", i, pi*4);
+  }
+}

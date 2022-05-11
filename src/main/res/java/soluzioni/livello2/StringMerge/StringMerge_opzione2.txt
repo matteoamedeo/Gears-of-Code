@@ -1,0 +1,16 @@
+public class Kata {
+    public static String stringMerge(String s1, String s2, char c) {
+        StringBuilder sb = new StringBuilder();
+        for (char ch : s1.toCharArray()) {
+            sb.append(ch);
+            if (ch == c) break;
+        }
+        boolean found = false;
+        (char ch : s2.toCharArray()) {
+            if (found) sb.append(ch);
+            if (ch == c) found = true;
+        }
+
+        return sb.toString();
+    }
+}
