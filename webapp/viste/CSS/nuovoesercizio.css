@@ -1,0 +1,98 @@
+:root {
+    --background: #16171B;
+    --menu: #121216;
+    --div: #222327;
+    --viola: #9549F7;
+    --livello: #ECB613;
+    --coloreEsercizi: #C9C9C9;
+
+}
+
+#sezione{
+width: 100vw;
+float: left;
+margin: 20px 0;
+}
+
+#scelta-livello{
+	display: flex;
+	   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 310px;
+}
+#select-livello{
+	width: 95px;
+	margin: auto;
+}
+#sezione > div{
+   margin-left: 10% ;
+    width: 200px;
+    color: var(--viola);
+    border-bottom: 1px solid var(--viola);
+    cursor: pointer;
+    font-size: 1.2rem !important;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    margin: 10px;
+    padding: 5px;
+
+}
+form > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    
+}
+.comando{
+    margin: 5px;
+    padding: 5px;
+    color: var(--coloreEsercizi);
+}
+input{
+    width: 300px;
+    color: #121216;
+    height: 32px;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+textarea{
+    max-width: 768px;
+    min-width: 300px;
+    height: 300px;
+    color: #121216;
+    font-size: 1.2rem;
+}
+input[type="submit"]{
+    margin-bottom: 30px;
+    width: 100px;
+    font-size: 0.9rem;
+}
+select{
+	color: black;
+}
+option{
+	color: black;
+}
+#send-esercizio{
+	border: none;
+	opacity: 0.7;
+	background-color: var(--viola);
+	color: var(--coloreEsercizi);
+	cursor: pointer;
+	border-radius: 10px;
+}
+#send-esercizio:hover{
+	opacity: 1;
+	color: white;
+
+	}
